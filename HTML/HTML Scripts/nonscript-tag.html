@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nonscript tag in html</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        </script>
+        
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+        
+        <p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+    </body>
+</html>
