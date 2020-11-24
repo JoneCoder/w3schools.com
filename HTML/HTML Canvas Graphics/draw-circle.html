@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <canvas id="circle" width="200" height="200" style="border:1px solid #d3d3d3">Your browser dose not support html canvas tag.</canvas>
+        
+        <script>
+            var canvas = document.getElementById('circle');
+            var ctx = canvas.getContext('2d');
+            ctx.beginPath();
+            ctx.arc(95, 95, 60, 0, 2*Math.PI);
+            ctx.stroke();
+        </script>
+    </body>
+</html>
