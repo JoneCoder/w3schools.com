@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <canvas id="strokeText" width="200" height="100" style="border:1px solid #d3d3d3">Your browser dose not support html canvas tag.</canvas>
+        
+        <script>
+            var canvas = document.getElementById('strokeText');
+            var ctx = canvas.getContext('2d');
+            ctx.font = '30px Arial';
+            ctx.strokeText('Hello World', 10, 50);
+        </script>
+    </body>
+</html>
