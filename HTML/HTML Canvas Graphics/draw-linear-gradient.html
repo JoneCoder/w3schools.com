@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <canvas id="linear" width="200" height="100" style="border:1px solid #d3d3d3">Your browser dose not support html canvas tag.</canvas>
+        
+        <script>
+            var canvas = document.getElementById('linear');
+            var ctx = canvas.getContext('2d');
+            var grd = ctx.createLinearGradient(0, 0, 200, 0);
+            grd.addColorStop(0, 'red');
+            grd.addColorStop(1, 'white');
+            ctx.fillStyle = grd;
+            ctx.fillRect(10, 10, 150, 80);
+        </script>
+    </body>
+</html>
